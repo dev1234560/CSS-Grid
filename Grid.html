@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <style>
+       * {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+.heading {
+  font-size: 40px;
+  margin: 40px;
+  color: #538481;
+}
+.main{
+    margin: 30px;
+    box-shadow:.4em .4em 2em #d29449;
+    padding: 10px;
+    border-radius: 10px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 1.5%;
+  height: 650px;
+}
+.child {
+  display: grid;
+  grid-gap: 1.5%;
+}
+.child div {
+  border-radius: 10px;
+  color:aquamarine;
+  background-color: #d47527;
+}
+.child div:hover {
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #429a38;
+  color: white;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+       
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="heading">Grid-1 Challenge</div>
+        <div class="container">
+            <div class="child">
+                <div>01</div>
+            </div>
+            <div class="child">
+                <div>02</div>
+                <div>03</div>
+            </div>
+            <div class="child">
+                <div>04</div>
+                <div>05</div>
+                <div>06</div>
+            </div>
+            <div class="child">
+                <div>07</div>
+                <div>08</div>
+                <div>09</div>
+                <div>10</div>
+            </div>
+            <div class="child">
+                <div>11</div>
+                <div>12</div>
+                <div>13</div>
+                <div>14</div>
+                <div>15</div>
+                <div>16</div>
+            </div>
+            <div class="child">
+                <div>17</div>
+                <div>18</div>
+                <div>19</div>
+                <div>20</div>
+                <div>21</div>
+                <div>22</div>
+                <div>23</div>
+                <div>24</div>
+                <div>25</div>
+                <div>26</div>
+                <div>27</div>
+                <div>28</div>
+    
+            </div>
+        </div>
+    </div>
+</body>
+</html>
